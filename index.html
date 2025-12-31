@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>LINE 通知</title>
+</head>
+<body>
+
+<pre id="msg">
+***** 泳訓通知 ***** 
+日期: 01/01 (Thu) 06:45 - 08:20 (元旦泳訓暫停)
+
+謝謝值班家長
+
+***** ！注意！ ***** 
+低年級同學請 07:50 入班晨光時間！
+中高年級隊員 08:40 進教室，準備上課！
+</pre>
+
+<p>
+  <a id="line" href="#">📢 分享到 LINE</a>
+</p>
+
+<script>
+  const text = document.getElementById('msg').innerText;
+  document.getElementById('line').href =
+    'https://line.me/R/share?text=' + encodeURIComponent(text);
+</script>
+
+</body>
+</html>
